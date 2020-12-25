@@ -5,41 +5,40 @@
 }
 
 :root {
-    --primary: #F2C94C;
+    --primary: rgb(52, 69, 167);
     --black: #333333;
     --width-break:600px
 }
 
 body {
-    margin: 0;
+    margin: 8px;
     font-family: 'Kalam', cursive;
     color: #333333;
-}
-
-nav {
-    background-color: var(--primary);
-    text-align: center;
+    background-image:url('https://media1.popsugar-assets.com/files/thumbor/jXdXfcX6aLoRz_arfua0RDvizbs/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/08/07/843/n/1922283/248b865f5988bc43f2e507.80115777_edit_img_image_15775818_1502133104/i/Reactions-Dothraki-Battle-Game-Thrones.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
 }
 
 main {
     margin: auto;
     padding: 1rem;
-    max-width: var(--width-break);
 }
 
 textarea {
     box-sizing: border-box;
     display: block;
-    width: 100%;
+    width: 80%;
     min-height: 20vh;
     margin-top: 2rem;
-    font-size: large;
+    font-size: small;
     font-family: inherit;
 }
 
 button {
     background-color: var(--primary);
-    border: none;
+    border: solid;
+    border-color:blue;
     margin: 1rem 0rem;
     padding: 1rem 2rem;
     font-family: 'Kalam', cursive;
@@ -48,9 +47,10 @@ button {
 
 
 #output {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 10vh;
+    box-sizing: border-box; 
+    color: white;
+    width: 80%;
+    min-height: 13vh;
     max-height: 20vh;
     overflow:scroll;
     border: 1px solid var(--black);
@@ -58,14 +58,12 @@ button {
 
 footer {
     position: fixed;
+    color: white;
     bottom: 0;
     width: 100%;
     padding: 1rem;
     background-color: var(--primary);
+    border-top-left-radius: 1rem;
     text-align: center;
 }
 
-footer p {
-    max-width: var(--width-break);
-    margin: auto;
-}
